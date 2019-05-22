@@ -25,6 +25,7 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="toggle"></div>
     <div class="container">
       <a class="navbar-brand" href="#"><img src = "60543600_363067327677658_8229090930351669248_n.png">College of Engineering and Information Sciences</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -183,6 +184,15 @@
     });
   });
   </script>
+  <script src="vendor/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('body').toggleClass('night')
+        })
+    })
+</script>
 
 </body>
 
