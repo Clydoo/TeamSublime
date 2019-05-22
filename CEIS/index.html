@@ -8,10 +8,12 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>College of Engineering and Information Sciences</title>
+  <title>CEIS</title>
 
   <link rel="shortcut icon" type="img/ico" href="ceislogo_Oaq_icon.ico">
   <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/js" href="nav.js">
+
 
 
   <!-- Bootstrap core CSS -->
@@ -22,25 +24,27 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src = "60543600_363067327677658_8229090930351669248_n.png">College of Engineering and Information Sciences</a>
+      <a class="navbar-brand" href="#"><img src = "60543600_363067327677658_8229090930351669248_n.png">College of Engineering and Information Sciences</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto navbar-right">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home
+            <a class="nav-link" href="#">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About</a>
-              <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="hist.html">History</a></li>
-            <li><a href="faculty.html">Faculty</a></li>
-              </ul>
+            <a class="nav-link" data-toggle="collapse" data-target = "#about">About</a>
+            <div id = "about" class="collapse">
+              <hr width="80%">
+            <a href="hist.html">History</a> <br>
+            <a href="faculty.html">Faculty</a>
+              
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Admission</a>
@@ -60,11 +64,31 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
+
+<div  class="open">
+  <span class="cls"></span>
+  <span>
+    <ul class="sub-menu ">
+      <li>
+        <a href="#about" title="about">About</a>
+      </li>
+      <li>
+        <a href="#skills" title="skills">Admission</a>
+      </li>
+      <li>
+        <a href="#jobs" title="jobs">Contact</a>
+      </li>
+      <li>
+        <a href="#contact" title="contact">FAQ and Inquiries</a>
+      </li>
+    </ul>
+  </span>
+  <span class="cls"></span>
+</div>
 
   <!-- Page Content -->
   <div class="outline">
-
 
 
 
@@ -75,26 +99,26 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+<!--     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li> -->
   </ol>
   <div class="carousel-inner">
 
     <div class="carousel-item active">
-      <img src="car_01.jpg" class="d-block w-100" alt="...">
+      <img src="carousel contents/27072429_327094227796346_9023836144410838809_n.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="ceisbuilding.jpg" class="d-block w-100" alt="...">
+      <img src="carousel contents/32597011_371744623331306_1505600935936655360_o.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="1.jpg" class="d-block w-100" alt="...">
+      <img src="carousel contents/32731975_371744773331291_4075994959713402880_o.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="2.jpg" class="d-block w-100" alt="...">
+      <img src="carousel contents/34511499_380896479082787_6274358705857232896_o.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
+<!--     <div class="carousel-item">
       <img src="3.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
@@ -102,7 +126,7 @@
     </div>
     <div class="carousel-item">
       <img src="5.jpg" class="d-block w-100" alt="...">
-    </div>
+    </div> -->
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -143,6 +167,21 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script id = "rendered-js">
+    $(document).ready(function() {
+    $(document).delegate('.open', 'click', function(event){
+      $(this).addClass('oppenned');
+      event.stopPropagation();
+    })
+    $(document).delegate('body', 'click', function(event) {
+      $('.open').removeClass('oppenned');
+    })
+    $(document).delegate('.cls', 'click', function(event){
+      $('.open').removeClass('oppenned');
+      event.stopPropagation();
+    });
+  });
+  </script>
 
 </body>
 
