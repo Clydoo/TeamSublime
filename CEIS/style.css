@@ -6,45 +6,58 @@
 	background-image: url('ceis_bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 
-.header {
-	margin: 0 auto;
+
+.navbar-brand {
+	/*margin-left: -50px;*/
 	/*border: 2px solid red;*/
-	padding: 30px;
-/*	height: 40px;
-	width: 800px;*/
-	background-color: rgb(0, 89, 48);
-	opacity: 0.8;
-	background-repeat: no-repeat;
-	text-align: center;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-top-color: 
+	/*margin-top: -5px;*/
+	padding: 15px;
+	/*min-height: 60px;*/
+
+
 }
 
 .responsive {
   max-width: 100%;
+
   height: auto;
 }
 
-.header img {
+.navbar-brand img {
 
-	height: 160px;
-	width: 900px;
+	height: 45px;
+	width: 45px;
+	/*border: 2px solid red;*/
+	margin-right: 10px;
+
+/*  height: 100%;
+  padding: 15px;
+  width: 60px;*/
 }
 
-nav {
-	width: 100%;
-	border-radius: 5px;
-	padding: 20px;
-	margin: 5px auto;
-	opacity: 0.9;
-	height: 100%;
-	min-height: 100%;
-	position: sticky;
-	top: 0;
+.navbar {
+	/*border: 2px solid red;*/
+	/*height: 70px;*/
+	padding: 50px;
+	opacity: 0.8;
+	min-height: 65px;
+	max-height: 100%;
+
 }
+
+
+.dropdown-menu a{
+
+	text-align: center;
+}
+
+
+
+/*home css*/
+
 
 .contents {
 	margin: 0 auto;
@@ -73,6 +86,7 @@ nav {
 
 	opacity: 0.5;
 }
+
 .carousel {
 	margin: 80px 20px 5px 20px;
 	/*border: 2px solid yellow;*/
@@ -104,6 +118,7 @@ nav {
 /*max-width:100%;
 max-height:100%;*/
 width:100%;
+height: 50%;
 
 
 /*border: 2px solid red;*/
@@ -122,22 +137,18 @@ width:100%;
 	
 }
 
+/*home end*/
 
 /*hist css*/
 
 .hist {
 	margin: 80px 50px 10px 50px;
 	border: 2px solid green;
-	padding: 200px;
+	padding: 50px;
 	background-color: white;
 	opacity: 0.8;
 
 }
-
-
-
-
-
 
 /*end hist css*/
 
@@ -175,6 +186,7 @@ width:100%;
 
 /*end prog*/
 
+
 /*fact html*/
 
 .fact {
@@ -202,7 +214,7 @@ fieldset {
 
 	/*border:1px solid gree;*/
 	border-radius:8px;
-	box-shadow:0 0 10px #999;
+	box-shadow:0 0 10px green;
 	/*background-color: gray;*/
 	/*border-radius: 10px;*/
 	margin: 0 auto;
@@ -236,3 +248,43 @@ border: 2px solid white;
 }
 
 /*end fact*/
+
+
+/*enreq*/
+
+.enreq {
+  margin: 80px 20px 10px 20px;
+  border: 2px solid green;
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+  opacity: 1.0;
+  /*width: 1100px;*/
+
+    /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgba( 0, 139, 4 ));*/
+}
+
+
+.curriculum, .reqs
+{
+    margin: 80px 50px 10px 50px;
+  border: 2px solid green;
+  padding: 50px;
+  background-color: white;
+  opacity: 0.8;
+  text-align: center;
+
+}
+
+.curriculum img {
+
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.curriculum table {
+
+  text-align: center;
+}
+
+
