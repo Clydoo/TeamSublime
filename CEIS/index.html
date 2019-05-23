@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>CEIS</title>
+  <title>College of Engineering and Information Sciences</title>
 
   <link rel="shortcut icon" type="img/ico" href="ceislogo_Oaq_icon.ico">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -26,14 +26,14 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src = "60543600_363067327677658_8229090930351669248_n.png">College of Engineering and Information Sciences</a>
+      <a class="navbar-brand" href="index.html"><img src = "60543600_363067327677658_8229090930351669248_n.png">College of Engineering and Information Sciences</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto navbar-right">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href="index.html">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -42,6 +42,7 @@
           About
         </a>
         <div class="dropdown-menu" aria-pledby="navbarDropdown">
+
           <a class="dropdown-item" href="hist.html">History</a>
           <a class="dropdown-item" href="faculty.html">Faculty</a>
 
@@ -56,7 +57,7 @@
 
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contacts.html">Contacts</a>
           </li>
 
           <li class="nav-item">
@@ -66,7 +67,6 @@
       </div>
     </div>
   </nav>
-
 <!-- <div  class="open">
   <span class="cls"></span>
   <span>
@@ -143,16 +143,14 @@
 
   <!-- contents -->
   <div class="contents">
-
-    <a href = "#"><img src="ico/facilities.png" class="responsive" style="margin-left: 80px;"></a>
-    <a href = "#"> <img src="ico/activities.png"  class="responsive"></a>
-    <a href = "#"> <img src="ico/announcements.png"  class="responsive"></a>
-     <a href = "gallery.html"><img src="ico/gallery.png"  class="responsive"></a>
-
-    <label>FACILITIES</label>
-    <label>ACTIVITIES</label>
-    <label>ANNOUNCEMENTS</label>
-    <label>GALLERY</label>
+    <div class="grid-container">
+      <div><a href = "faci.html"><img src="ico/facilities.png" class="responsive" ></a></div>
+      <div><a href = "activities.html"> <img src="ico/activities.png"  class="responsive"></a></div>
+      <div>  <a href = "gallery.html"><img src="ico/gallery.png"  class="responsive"></a></div>
+      <div><p>Facilities</p></div>
+      <div><p>Activities</p></div>
+      <div><p>Gallery</p></div>
+    </div>
 
     <!-- FACILITIES | ACTIVITIES | ANNOUNCEMENTS | GALLERY circle thingy -->
   </div>
@@ -160,7 +158,16 @@
 
   <!-- contacts -->
   <div class="footer">
-    CONTACTS
+
+   <div class="sm">
+  <div>
+  <a href="https://web.facebook.com/CEISTRINITY/?epa=SEARCH_BOX"><img src="5a35528ea43144.6338074215134439826725.png"></a></div>
+  <div>
+<a href="https://twitter.com/TUACEISofficial"><img src="5a3a185132ceb1.89894673151375675320812609.png"></a></div>
+  <div>
+<a href="faq.html#Inquiries"><img src="kisspng-computer-icons-gmail-email-gmail-save-icon-format-5ab1a53064bf91.0991086415215916004127.png"></a></div>  
+
+</div>
   </div>
   <!-- end contacts -->
 </div>
@@ -183,6 +190,15 @@
     });
   });
   </script>
+<script src="vendor/jquery/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('body').toggleClass('night')
+        })
+    })
+</script>
 
 </body>
 

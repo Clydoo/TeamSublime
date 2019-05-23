@@ -3,22 +3,29 @@
 <head>
 	<title>College of Engineering and Information Sciences</title>
 </head>
-<link rel="shortcut icon" type="img/ico" href="ceislogo_Oaq_icon.ico">
+
 <link rel="stylesheet" type="text/css" href="style.css">
  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="img/ico" href="ceislogo_Oaq_icon.ico">
 
 
 
-
-
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendoor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendoor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendoor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 <body>
 <!-- background -->
 <div class="outline">
 
-	<!-- header -->
-	<div class="header">
-	</div>
-	<!-- end header -->
 
 
 		  <!-- Navigation -->
@@ -29,29 +36,33 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto navbar-right">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About</a>
-              <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="hist.html">History</a></li>
-            <li><a href="faculty.html">Faculty</a></li>
-              </ul>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-pledby="navbarDropdown">
+
+          <a class="dropdown-item" href="hist.html">History</a>
+          <a class="dropdown-item" href="faculty.html">Faculty</a>
+
           </li>
-          <li class="nav-item">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Admission</a>
-              <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="prog.html">Programs</a></li>
-            <li><a href="enreq.html">Enrollment Requirements</a></li>
-              </ul>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Admission
+        </a>
+        <div class="dropdown-menu" aria-pledby="navbarDropdown">
+          <a class="dropdown-item" href="prog.html">Programs</a>
+          <a class="dropdown-item" href="enreq.html">Enrollment Requirements</a>
 
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contacts.html">Contacts</a>
           </li>
 
           <li class="nav-item">
@@ -65,15 +76,117 @@
 
 	<!-- fact -->
 	<div class="hist">
-    <CENTER>
-faq here
-	 </CENTER>
+    <div id="faq">
+
+	<center><h1> Frequently Asked Questions (FAQ)</h1></center><br>
+      <div id="questions">
+        Q. Does the University supports Game Developing?
+
+      </div>
+
+      <div id="answers">
+        A. Currently we don't have a specilization for Game Developing but some of our current specialization supports languages for Game Developing.
+        <br/>
+        Ex.
+        <br/>
+        <li>C++</li>
+        <li>Java</li>
+      </div>
+
+      <div id="questions">
+        Q.
+
+      </div>
+
+      <div id="answers">
+        A.
+      </div>
+
+      <div id="questions">
+
+        Q.
+      </div>
+
+      <div id="answers">
+        A.
+      </div>
+
+    </div>
+
+
+    <div id ="Inquiries">
+    	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="images/img-01.png" alt="IMG">
+			</div>
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					Inquiries
+				</span>				
+				<div class="wrap-input1 validate-input" data-validate = "Name is required">
+					<input class="input1" type="text" name="name" placeholder="Name">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input1" type="text" name="email" placeholder="Email">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
+					<input class="input1" type="text" name="subject" placeholder="Subject">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Message is required">
+					<textarea class="input1" name="message" placeholder="Message"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn" >
+						<p id="error"></p>
+						<span>
+							Send Email
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
   </div>
 	<!-- end fact -->
 
 	
 </div>
 <!-- end bg -->
+<!-- mail form -->
+<!--===============================================================================================-->
+	<script src="vendoor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendoor/bootstrap/js/popper.js"></script>
+<!--===============================================================================================-->
+	<script src="vendoor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendoor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<script src="js/main.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script>
+</script>
+<!-- end of mail form js -->
 <script type="text/javascript" src = "vendor/jquery/jquery.min.js"></script>
 <!-- <script type="text/javascript" src = "vendor/jquery/jquery-3.2.1.min.js"></script> -->
 <script type="text/javascript" src = "vendor/bootstrap/js/bootstrap.min.js"></script>

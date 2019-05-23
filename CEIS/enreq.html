@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>College of Engineering and Information Sciences</title>
+  <title>College of Engineering and Information Sciences</title>
 </head>
 <link rel="shortcut icon" type="img/ico" href="ceislogo_Oaq_icon.ico">
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -15,43 +15,42 @@
 <!-- background -->
 <div class="outline">
 
-	<!-- header -->
-	<div class="header">
-	</div>
-	<!-- end header -->
 
-
-		  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src = "60543600_363067327677658_8229090930351669248_n.png">College of Engineering and Information Sciences</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto navbar-right">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About</a>
-              <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="hist.html">History</a></li>
-            <li><a href="faculty.html">Faculty</a></li>
-              </ul>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-pledby="navbarDropdown">
+
+          <a class="dropdown-item" href="hist.html">History</a>
+          <a class="dropdown-item" href="faculty.html">Faculty</a>
+
           </li>
-          <li class="nav-item">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Admission</a>
-              <ul class="dropdown-menu dropdown-menu-right">
-            <li><a href="prog.html">Programs</a></li>
-            <li><a href="enreq.html">Enrollment Requirements</a></li>
-              </ul>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Admission
+        </a>
+        <div class="dropdown-menu" aria-pledby="navbarDropdown">
+          <a class="dropdown-item" href="prog.html">Programs</a>
+          <a class="dropdown-item" href="enreq.html">Enrollment Requirements</a>
 
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contacts.html">Contacts</a>
           </li>
 
           <li class="nav-item">
@@ -63,21 +62,159 @@
   </nav>
 
 
-	<!-- hist -->
-	<div class="hist">
-    <CENTER>
-  enrollment req here
-	 </CENTER>
-  </div>
-	<!-- end hist -->
+  <!-- hist -->
+  <div class="enreq">
 
-	
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  
+<center><h1>SY 2018-2019 Curriculum</h1></center>
+  <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Information Technology</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Computer Engineering</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">IT Specializations</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Information Technology</h3>
+  <img class = "myImg" src="curri/Image (2).jpg" height="200px" width="200px">
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Computer Engineering</h3>
+  <img class = "myImg" src="curri/compeng.jpg" height="200px" width="200px">
+
+</div>
+
+<div id="Tokyo" class="tabcontent">
+    <div class="grid-curr">
+  <div>Software Engineering</div>
+  <div>Mobile and Web Applications</div>
+  <div>Multimedia Arts & Animation</div>  
+  <div>Data Science & Analytics</div>
+  <div><img class = "myImg" src="curri/softeng.jpg" height="200px" width="200px"></div>
+  <div><img class = "myImg" src="curri/MW.jpg" height="200px" width="200px"></div>
+  <div><img class = "myImg" src="curri/ma.jpg" height="200px" width="200px"></div>
+  <div><img class = "myImg" src="curri/datasci.jpg" height="200px" width="200px"></div> 
+</div>
+
+</div>
+
+  <br/><br/><br/><br/><br/><br/><br/>
+  <div class="reqs">
+
+      <table border="1">
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            Enrollment Requirements
+          </td>
+        </tr>
+        <tr>
+          <td  style="text-align: center;">
+            Admission Requirements
+          </td>
+          <td  style="text-align: center;">
+            Application Form
+          </td>
+        </tr>
+        <tr>
+          <td>
+
+
+<b>For Freshmen</b>
+<br>
+    Entrance examination<br>
+    One (1) ID picture (1×1, latest)<br>
+    Form 138<br>
+    Certificate of Good Moral Character<br>
+    Birth Certificate from NSO (photocopy)
+<hr width="50%">
+<b>For Transferees</b><br>
+
+    Entrance examination<br>
+    One (1) ID picture (1×1, latest)<br>
+    Honorable Dismissal<br>
+    Scholastic Records / Copy of Grades<br>
+    Certificate of Good Moral Character<br>
+    Clearance for Admission from the Registrar’s Office
+
+</td>
+<td>
+  
+  <ul>
+    <li> <a href="https://drive.google.com/file/d/19vVLkcgX3pDsy81XI6EwS2qMeouQKSnT/view">
+    Freshmen </a>
+  </li>
+  <li><a href="https://drive.google.com/file/d/1YNmcmrQK5S0phH5TDP34swYG100qdUWT/view">
+    Transferees </a>
+  </li>
+  <li><a href="https://drive.google.com/file/d/19vVLkcgX3pDsy81XI6EwS2qMeouQKSnT/view">
+    Foreign Students</a>
+  </li>
+
+</td>
+<tr>
+      </table>
+
+  </div>
+
+
+  </div>
+  <!-- end hist -->
+
+  
 </div>
 <!-- end bg -->
 <script type="text/javascript" src = "vendor/jquery/jquery.min.js"></script>
 <!-- <script type="text/javascript" src = "vendor/jquery/jquery-3.2.1.min.js"></script> -->
 <script type="text/javascript" src = "vendor/bootstrap/js/bootstrap.min.js"></script>
 
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+<!-- vertical tabs -->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 
 

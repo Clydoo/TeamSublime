@@ -1,0 +1,323 @@
+.outline {
+
+	border: 2px solid black;
+	margin: 0 auto;
+	padding: 30px;
+	background-image: url('ceis_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+.navbar-brand {
+	/*margin-left: -50px;*/
+	/*border: 2px solid red;*/
+	/*margin-top: -5px;*/
+	padding: 15px;
+	/*min-height: 60px;*/
+
+
+}
+
+.responsive {
+  max-width: 100%;
+
+  height: auto;
+}
+
+.navbar-brand img {
+
+	height: 45px;
+	width: 45px;
+	/*border: 2px solid red;*/
+	margin-right: 10px;
+
+/*  height: 100%;
+  padding: 15px;
+  width: 60px;*/
+}
+
+.navbar {
+	/*border: 2px solid red;*/
+	/*height: 70px;*/
+	padding: 50px;
+	opacity: 0.8;
+	min-height: 65px;
+	max-height: 100%;
+
+}
+
+
+.dropdown-menu a{
+
+	text-align: center;
+}
+
+
+
+/*home css*/
+
+
+.contents {
+	margin: 0 auto;
+	border: 2px solid green;
+	padding: 80px;
+	background-color: white;
+	opacity: 0.8;
+	text-align: center;	
+}
+
+.contents label {
+
+	margin: 10px 120px 0 20px;
+}
+
+.contents img {
+
+	height: 150px;
+	width: 150px;
+	margin-right: 100px;
+
+}
+
+.contents a:hover {
+
+	opacity: 0.5;
+}
+
+.carousel {
+	margin: 80px 20px 5px 20px;
+	/*border: 2px solid yellow;*/
+	/*padding: 50px;*/
+	max-height: 550px;
+	border-right: 5px solid white;
+	border-left: 5px solid white;
+
+}
+
+.carousel-indicators {
+	   filter: invert(100%);
+
+}
+
+.carousel-item {
+  height: 100%;
+
+  /*min-height: 300px;*/
+  max-height: 500px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item img {
+/*max-width:100%;
+max-height:100%;*/
+width:100%;
+height: 50%;
+
+
+/*border: 2px solid red;*/
+
+}
+
+.carousel-control-next , .carousel-control-prev{
+    filter: invert(100%);
+}
+
+
+.footer {
+	margin: 10px auto;
+	padding: 50px;
+	border: 2px solid blue;
+	
+}
+
+/*home end*/
+
+/*hist css*/
+
+.hist {
+	margin: 80px 50px 10px 50px;
+	border: 2px solid green;
+	padding: 50px;
+	background-color: white;
+	opacity: 0.8;
+
+}
+
+/*end hist css*/
+
+/*prog html*/
+
+.prog {
+	margin: 80px 50px 10px 50px;
+	border: 2px solid green;
+	padding: 100px;
+	background-color: white;
+	opacity: 0.8;
+}
+
+
+#indent {
+
+	text-indent: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+#indentspec {
+
+	text-indent: 50px;
+	font-weight: bold;
+
+}
+
+#indenttext {
+
+	text-indent: 70px;
+	text-align: justify;
+	margin-left: 80px;
+}
+
+/*end prog*/
+
+
+/*fact html*/
+
+.fact {
+
+	margin: 80px 50px 10px 50px;
+	border: 2px solid green;
+	padding: 50px;
+	background-color: white;
+	opacity: 0.9;
+
+}
+
+
+.fact img {
+
+	height: 100px; 
+	width: 100px;
+	/*border: 2px solid pink;*/
+
+}
+
+
+
+fieldset {
+
+	/*border:1px solid gree;*/
+	border-radius:8px;
+	box-shadow:0 0 10px green;
+	/*background-color: gray;*/
+	/*border-radius: 10px;*/
+	margin: 0 auto;
+
+
+
+
+}
+
+legend {
+
+    font-family: 'Montserrat', sans-serif;
+
+   }
+
+.container, .full-time , .part-time{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	/*border: 2px solid blue;*/
+}
+
+.grid-item {
+
+height: 200px;
+width: 250px;
+display: inline-block;
+border: 2px solid white;
+
+
+}
+
+/*end fact*/
+
+
+/*enreq*/
+
+.enreq {
+  margin: 80px 20px 10px 20px;
+  border: 2px solid green;
+  padding: 50px;
+  background-color: white;
+  opacity: 1.0;
+  /*width: 1100px;*/
+
+    /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgba( 0, 139, 4 ));*/
+}
+
+
+.curri {
+
+   border: 2px solid black;
+   padding: 50px;
+
+}
+
+/*comment is layf*/
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+body.night
+{
+    background: #00151f;
+}
+.toggle
+{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.toggle.active
+{
+    background: #00151f;
+    border: 2px solid #fff;
+}
+.toggle:before
+{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.toggle.active:before
+{
+    left: 27px;
+    background: #fff;
+}
+body.night .contents
+{
+    color: #fff;
+}
